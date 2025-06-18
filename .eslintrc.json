@@ -1,0 +1,17 @@
+{
+  "extends": ["standard", "plugin:react/recommended"],
+  "plugins": ["import", "jsx-a11y", "react"],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "project": "./tsconfig.json"
+  },
+  "env": {
+    "browser": true,
+    "es6": true
+  },
+  "rules": {
+    "@typescript-eslint/eslint-plugin": "off"
+  }
+}

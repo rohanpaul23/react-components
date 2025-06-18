@@ -1,0 +1,17 @@
+# dependencies
+/node_modules
+
+# production
+/build
+
+# IDEs and editors
+.vscode/
+
+# typescript
+*.tsbuildinfo
+*.js
+
+# react
+*.css.map
+*.js.map
+*.json.map
