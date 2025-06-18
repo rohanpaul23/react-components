@@ -1,0 +1,28 @@
+.button {
+  background-color: #4CAF50;
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.primary {
+  background-color: #4CAF50;
+}
+
+.secondary {
+  background-color: yellow;
+}
+.danger {
+  background-color: red;
+}
+
+.button:hover {
+  background-color: #3e8e41;
+}
+
+.button:active {
+  background-color: #3e8e41;
+  transform: translateY(2px);
+}

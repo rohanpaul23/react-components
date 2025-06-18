@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import ReactDOM from 'react-dom/client'
 import ToastContainer from './components/Toast'
 import type { ToastProps } from './components/Toast/Toast'
+import Button from './components/Button';
 
 const App: React.FC = () => {
   
@@ -9,7 +10,7 @@ const App: React.FC = () => {
   // Call the components here to render
   return (
     <div>
-      Hello World
+     <Button variant="danger" onClick={() => console.log('clicked')} disabled={false}>Save</Button>
     </div>
   );
 };
