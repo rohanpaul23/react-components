@@ -1,0 +1,72 @@
+option {
+    font-size: 18px !important;
+    background-color: red !important;
+}
+
+option:before {
+    content: ">";
+    font-size: 20px;
+    display: none;
+    padding-right: 10px;
+    padding-left: 5px;
+    color: #fff !important;
+}
+
+option:hover:before {
+    display: inline;
+}
+
+
+.input-container {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  max-width: 300px;
+}
+
+.input-box {
+  width: 100%;
+  padding: 8px 36px 8px 12px; /* More padding on right for icon */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.input-box:focus {
+  border-color: #007bff;
+}
+
+.input-icon-right {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: gray;
+  pointer-events: none;
+}
+
+
+.rotate180Deg{
+    rotate: 180deg;
+}
+
+.all-options {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background: whitesmoke;
+    border: 1px solid black;
+    border-radius: 2%;
+    margin-top: 2px;
+}
+
+.option {
+    padding: 5px;
+    cursor: pointer;
+}
+
+.option:hover{
+    background-color: gainsboro;
+}
