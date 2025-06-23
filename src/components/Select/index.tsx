@@ -13,10 +13,6 @@ export interface SelectProps {
 const Select = ({label,selectedValue,onChange,options}: SelectProps) => {
   const [showOptions,setShowOptions] = useState(false)
 
-  console.log("options",options)
-  console.log("selectedValue",selectedValue)
-
-
   const handleSelection = (optionSelected : string) => {
     setShowOptions(false)
     onChange(optionSelected)
