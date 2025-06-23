@@ -3,14 +3,15 @@ import ReactDOM from 'react-dom/client'
 import ToastContainer from './components/Toast'
 import type { ToastProps } from './components/Toast/Toast'
 import Button from './components/Button';
+import Modal from './components/Modal';
 
 const App: React.FC = () => {
-  
+  const [isOpen,setIsOpen] = useState(true)
 
   // Call the components here to render
   return (
     <div>
-     <Button variant="danger" onClick={() => console.log('clicked')} disabled={false}>Save</Button>
+     {isOpen && <Modal isOpen onClose={()=>setIsOpen(false)}>Test Modal</Modal>}
     </div>
   );
 };
