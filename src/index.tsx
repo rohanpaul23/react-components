@@ -5,6 +5,8 @@ import type { ToastProps } from './components/Toast/Toast'
 import Button from './components/Button';
 import Modal from './components/Modal';
 import Select from './components/Select';
+import InfiniteScrolling from './components/InfiniteSrolling';
+import InfinitePostsWithIO from './components/InfiniteSrolling/InfiniteScrollingInterSectionObserver';
 
 const App: React.FC = () => {
   const [isOpen,setIsOpen] = useState(true)
@@ -32,7 +34,8 @@ const App: React.FC = () => {
   }
   return (
     <div>
-      <Select label='Select' selectedValue={selectedValue} onChange={(value)=>handleSelection(value)} options={options}/>
+      {/* <InfiniteScrolling/> */}
+      <InfinitePostsWithIO/>
     </div>
   );
 };
