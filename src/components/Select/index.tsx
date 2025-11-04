@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useCallback, useState } from 'react'
 import "./styles.css"
 import { FaCaretDown, FaCaretSquareDown } from "react-icons/fa";
 import { MdClear } from "react-icons/md";
