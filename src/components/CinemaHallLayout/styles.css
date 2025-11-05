@@ -1,0 +1,104 @@
+:root{
+ --seat-size: 34px;         /* width for each grid column */
+  --seat-gap: 8px;           /* gap between seats vertically */
+  --aisle-width: 18px;       /* width of each aisle column */
+  --seat-radius: 6px;
+
+  --clr-bg: #0e0f13;
+  --clr-surface: #151822;
+  --clr-text: #d8deea;
+  --clr-muted: #9aa6b2;
+
+  --clr-seat: #2a3344;
+  --clr-seat-hover: #3a4660;
+  --clr-seat-selected: #4c8bf7;
+  --clr-seat-selected-contrast: #fff;
+  --clr-seat-reserved: #4a2b2b;
+  --clr-aisle: transparent;
+  --clr-screen: linear-gradient(180deg, #e7eefc, #c9d7f8);
+}
+
+.hallContainer{
+  background-color: var(--clr-bg);
+  color: var(--clr-text);
+  padding: 24px 16px 48px;
+  min-height: 100vh;
+  max-height: 100vh;
+  display: flex;
+  overflow: auto;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.seatsLayout{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.rowContainer{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.rowLabel{
+  font-weight: bold;
+  font-size: 20px;
+}
+.rowSeats {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+}
+
+
+.seat{
+    width: 20px;
+    height: 20px;
+    background-color: #c3b6b6;
+    text-align: center;
+    color: var(--clr-surface);
+}
+
+.screen{
+  width: 45vw;
+  height: 30px;
+  background-color: goldenrod;
+  margin-top: 28px;
+  margin-left: 45px;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+}
+
+.seatsSelection{
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.seatDistrubution{
+  height: 15px;
+  width: 15px;
+}
+
+.available{
+  background-color:#c3b6b6;
+}
+
+.selected {
+  background-color: green;
+}
+
+.sold {
+  background-color: grey;
+}

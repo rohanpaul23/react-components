@@ -1,0 +1,85 @@
+/* -------------------------------------------------
+   File: UsersTable.css (create this file next to JSX)
+   Pure CSS, no libraries
+   ------------------------------------------------- */
+:root {
+  --bg: #0f1320;
+  --card: #171c2b;
+  --border: #2a3250;
+  --text: #e7ecf5;
+  --muted: #a7b1c2;
+  --accent: #4c8bf7;
+}
+
+.users-wrap {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 16px;
+  color: var(--text);
+  max-width: 960px;
+}
+
+.toolbar {
+  display: flex;
+  gap: 12px;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.page-size { display: flex; align-items: center; gap: 8px; }
+.label { font-size: 14px; color: var(--muted); }
+select {
+  background: #12172a;
+  border: 1px solid var(--border);
+  color: var(--text);
+  padding: 6px 10px;
+  border-radius: 8px;
+}
+
+.count { font-size: 14px; color: var(--muted); }
+
+.table-scroll { overflow: auto; border-radius: 8px; }
+.users-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 560px;
+}
+.users-table th, .users-table td {
+  border-bottom: 1px solid var(--border);
+  padding: 10px 12px;
+  text-align: left;
+  font-size: 14px;
+}
+.users-table thead th {
+  background: #12172a;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+.users-table tbody tr:hover { background: rgba(255,255,255,0.03); }
+.empty { text-align: center; color: var(--muted); padding: 20px; }
+
+.pagination {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 12px;
+}
+.btn {
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--text);
+  padding: 6px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.btn:disabled { opacity: 0.5; cursor: default; }
+.btn:not(:disabled):hover { border-color: var(--accent); }
+.page-info { color: var(--muted); }
+
+/* Demo wrapper (optional) */
+/* You can ignore this if integrating into an existing app */
+.app-demo { background: var(--bg); min-height: 100vh; display: grid; place-items: center; padding: 24px; }

@@ -7,6 +7,9 @@ import Modal from './components/Modal';
 import Select from './components/Select';
 import InfiniteScrolling from './components/InfiniteSrolling';
 import InfinitePostsWithIO from './components/InfiniteSrolling/InfiniteScrollingInterSectionObserver';
+import UsersTable from './components/UsersTable';
+import CinemaCopy from './components/CinemaHallLayout';
+import CinemaHallLayout from './components/CinemaHallLayout';
 
 const App: React.FC = () => {
   const [isOpen,setIsOpen] = useState(true)
@@ -34,8 +37,8 @@ const App: React.FC = () => {
   }
   return (
     <div>
-      {/* <InfiniteScrolling/> */}
-      <InfinitePostsWithIO/>
+      {/* <CinemaCopy rows={10} columns={16}/> */}
+      <CinemaHallLayout  rows={10} columns={16}/>
     </div>
   );
 };
